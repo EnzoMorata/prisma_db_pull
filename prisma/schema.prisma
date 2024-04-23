@@ -1,0 +1,14 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "${env(DB_PROVIDER)}"
+  url      = "${env(DB_PROVIDER)}://${env(DB_USER)}:${env(DB_PASSWORD)}@${env(DB_HOST)}:${env(DB_PORT)}/${env(DB_NAME)}${if(env("DB_ARGUMENTS"), "?" + env("DB_ARGUMENTS"), "")}"
+}
