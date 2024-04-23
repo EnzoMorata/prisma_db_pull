@@ -14,4 +14,4 @@ Desde la terminal en el directorio raíz del repositorio, ejecutar el siguiente 
 yarn db_pull
 ```
 
-Dentro del archivo [schema.prisma](./prisma/schema.prisma) se habrá generado el modelo de la base de datos indicada en el archivo *.env*.
+Dentro del archivo [schema.prisma](./prisma/schema.prisma) se habrá generado el modelo de la base de datos indicada en el archivo *.env*. Por lo tanto, lo ideal sería compartir este archivo completo para tener así el modelo de la Base de Datos.
